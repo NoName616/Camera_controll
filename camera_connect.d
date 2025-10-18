@@ -1,0 +1,1 @@
+E:\RustProject\camera_connect\target\debug\camera_connect.exe: E:\RustProject\camera_connect\src\app.rs E:\RustProject\camera_connect\src\camera.rs E:\RustProject\camera_connect\src\ffi.rs E:\RustProject\camera_connect\src\main.rs E:\RustProject\camera_connect\src\utils.rs
