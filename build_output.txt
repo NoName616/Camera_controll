@@ -1,0 +1,2708 @@
+   Compiling camera_connect v0.1.0 (E:\RustProject\camera_connect)
+warning: unused import: `CString`
+ --> src\ffi.rs:2:16
+  |
+2 | use std::ffi::{CString, OsString};
+  |                ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `OsStringExt`
+ --> src\ffi.rs:3:29
+  |
+3 | use std::os::windows::ffi::{OsStringExt, OsStrExt};
+  |                             ^^^^^^^^^^^
+
+warning: unused import: `std::path::Path`
+ --> src\ffi.rs:4:5
+  |
+4 | use std::path::Path;
+  |     ^^^^^^^^^^^^^^^
+
+warning: unused import: `std::ptr`
+ --> src\ffi.rs:5:5
+  |
+5 | use std::ptr;
+  |     ^^^^^^^^
+
+warning: unused imports: `HINSTANCE` and `HWND`
+ --> src\ffi.rs:7:34
+  |
+7 | use windows::Win32::Foundation::{HINSTANCE, HWND};
+  |                                  ^^^^^^^^^  ^^^^
+
+warning: unused import: `GetModuleHandleW`
+ --> src\ffi.rs:8:45
+  |
+8 | use windows::Win32::System::LibraryLoader::{GetModuleHandleW, LoadLibraryW, GetProcAddress};
+  |                                             ^^^^^^^^^^^^^^^^
+
+warning: unused import: `HWND as HANDLE`
+  --> src\ffi.rs:22:56
+   |
+22 | use windows::Win32::Foundation::{HINSTANCE as HMODULE, HWND as HANDLE};
+   |                                                        ^^^^^^^^^^^^^^
+
+warning: variant `ipcColors` should have an upper camel case name
+  --> src\ffi.rs:54:5
+   |
+54 |     ipcColors = 0,
+   |     ^^^^^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `IpcColors`
+   |
+   = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: variant `ipcTemps` should have an upper camel case name
+  --> src\ffi.rs:55:5
+   |
+55 |     ipcTemps = 1,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `IpcTemps`
+
+warning: variant `ipcADUs` should have an upper camel case name
+  --> src\ffi.rs:56:5
+   |
+56 |     ipcADUs = 2,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `IpcAdus`
+
+warning: variant `fsFlagOpen` should have an upper camel case name
+  --> src\ffi.rs:62:5
+   |
+62 |     fsFlagOpen = 0,
+   |     ^^^^^^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `FsFlagOpen`
+
+warning: variant `fsFlagClose` should have an upper camel case name
+  --> src\ffi.rs:63:5
+   |
+63 |     fsFlagClose = 1,
+   |     ^^^^^^^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `FsFlagClose`
+
+warning: variant `fsFlagOpening` should have an upper camel case name
+  --> src\ffi.rs:64:5
+   |
+64 |     fsFlagOpening = 2,
+   |     ^^^^^^^^^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `FsFlagOpening`
+
+warning: variant `fsFlagClosing` should have an upper camel case name
+  --> src\ffi.rs:65:5
+   |
+65 |     fsFlagClosing = 3,
+   |     ^^^^^^^^^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `FsFlagClosing`
+
+warning: variant `fsError` should have an upper camel case name
+  --> src\ffi.rs:66:5
+   |
+66 |     fsError = 4,
+   |     ^^^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `FsError`
+
+warning: variant `rmOff` should have an upper camel case name
+  --> src\ffi.rs:72:5
+   |
+72 |     rmOff = 0,
+   |     ^^^^^ help: convert the identifier to upper camel case: `RmOff`
+
+warning: variant `rmCW90` should have an upper camel case name
+  --> src\ffi.rs:73:5
+   |
+73 |     rmCW90 = 1,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `RmCw90`
+
+warning: variant `rmACW90` should have an upper camel case name
+  --> src\ffi.rs:74:5
+   |
+74 |     rmACW90 = 2,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `RmAcw90`
+
+warning: variant `rmCW180` should have an upper camel case name
+  --> src\ffi.rs:75:5
+   |
+75 |     rmCW180 = 3,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `RmCw180`
+
+warning: variant `rmCWH` should have an upper camel case name
+  --> src\ffi.rs:76:5
+   |
+76 |     rmCWH = 4,
+   |     ^^^^^ help: convert the identifier to upper camel case: `RmCwh`
+
+warning: variant `rmCWV` should have an upper camel case name
+  --> src\ffi.rs:77:5
+   |
+77 |     rmCWV = 5,
+   |     ^^^^^ help: convert the identifier to upper camel case: `RmCwv`
+
+warning: variant `rmACWH` should have an upper camel case name
+  --> src\ffi.rs:78:5
+   |
+78 |     rmACWH = 6,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `RmAcwh`
+
+warning: variant `rmACWV` should have an upper camel case name
+  --> src\ffi.rs:79:5
+   |
+79 |     rmACWV = 7,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `RmAcwv`
+
+warning: variant `rmUser` should have an upper camel case name
+  --> src\ffi.rs:80:5
+   |
+80 |     rmUser = 8,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `RmUser`
+
+warning: variant `zmOff` should have an upper camel case name
+  --> src\ffi.rs:86:5
+   |
+86 |     zmOff = 0,
+   |     ^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `ZmOff`
+
+warning: variant `zmMax` should have an upper camel case name
+  --> src\ffi.rs:87:5
+   |
+87 |     zmMax = 1,
+   |     ^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `ZmMax`
+
+warning: variant `zmUser` should have an upper camel case name
+  --> src\ffi.rs:88:5
+   |
+88 |     zmUser = 2,
+   |     ^^^^^^ help: convert the identifier to upper camel case (notice the capitalization): `ZmUser`
+
+warning: variant `masOff` should have an upper camel case name
+  --> src\ffi.rs:94:5
+   |
+94 |     masOff = 0,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `MasOff`
+
+warning: variant `masMP1x1` should have an upper camel case name
+  --> src\ffi.rs:95:5
+   |
+95 |     masMP1x1 = 1,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `MasMp1x1`
+
+warning: variant `masMP3x3` should have an upper camel case name
+  --> src\ffi.rs:96:5
+   |
+96 |     masMP3x3 = 2,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `MasMp3x3`
+
+warning: variant `masMP5x5` should have an upper camel case name
+  --> src\ffi.rs:97:5
+   |
+97 |     masMP5x5 = 3,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `MasMp5x5`
+
+warning: variant `masUserDefRect` should have an upper camel case name
+  --> src\ffi.rs:98:5
+   |
+98 |     masUserDefRect = 4,
+   |     ^^^^^^^^^^^^^^ help: convert the identifier to upper camel case: `MasUserDefRect`
+
+warning: variant `masEllipse` should have an upper camel case name
+  --> src\ffi.rs:99:5
+   |
+99 |     masEllipse = 5,
+   |     ^^^^^^^^^^ help: convert the identifier to upper camel case: `MasEllipse`
+
+warning: variant `masPolygon` should have an upper camel case name
+   --> src\ffi.rs:100:5
+    |
+100 |     masPolygon = 6,
+    |     ^^^^^^^^^^ help: convert the identifier to upper camel case: `MasPolygon`
+
+warning: variant `masCurve` should have an upper camel case name
+   --> src\ffi.rs:101:5
+    |
+101 |     masCurve = 7,
+    |     ^^^^^^^^ help: convert the identifier to upper camel case: `MasCurve`
+
+warning: variant `mamMin` should have an upper camel case name
+   --> src\ffi.rs:107:5
+    |
+107 |     mamMin = 0,
+    |     ^^^^^^ help: convert the identifier to upper camel case: `MamMin`
+
+warning: variant `mamMax` should have an upper camel case name
+   --> src\ffi.rs:108:5
+    |
+108 |     mamMax = 1,
+    |     ^^^^^^ help: convert the identifier to upper camel case: `MamMax`
+
+warning: variant `mamAvg` should have an upper camel case name
+   --> src\ffi.rs:109:5
+    |
+109 |     mamAvg = 2,
+    |     ^^^^^^ help: convert the identifier to upper camel case: `MamAvg`
+
+warning: variant `mamDist` should have an upper camel case name
+   --> src\ffi.rs:110:5
+    |
+110 |     mamDist = 3,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `MamDist`
+
+warning: use of deprecated struct `egui_extras::RetainedImage`: consider using `egui::Image` instead
+ --> src\app.rs:2:18
+  |
+2 | use egui_extras::RetainedImage;
+  |                  ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(deprecated)]` on by default
+
+warning: use of deprecated struct `egui_extras::RetainedImage`: consider using `egui::Image` instead
+  --> src\app.rs:62:22
+   |
+62 |     ir_image: Option<RetainedImage>,
+   |                      ^^^^^^^^^^^^^
+
+warning: use of deprecated struct `egui_extras::RetainedImage`: consider using `egui::Image` instead
+  --> src\app.rs:63:27
+   |
+63 |     visible_image: Option<RetainedImage>,
+   |                           ^^^^^^^^^^^^^
+
+warning: use of deprecated struct `egui_extras::RetainedImage`: consider using `egui::Image` instead
+   --> src\app.rs:108:46
+    |
+108 |                         self.ir_image = Some(RetainedImage::from_color_image("ir_image", color_image));
+    |                                              ^^^^^^^^^^^^^
+
+warning: use of deprecated struct `egui_extras::RetainedImage`: consider using `egui::Image` instead
+   --> src\app.rs:114:51
+    |
+114 |                         self.visible_image = Some(RetainedImage::from_color_image("visible_image", color_image));
+    |                                                   ^^^^^^^^^^^^^
+
+error[E0560]: struct `AppState` has no field named `ir_image`
+  --> src\app.rs:51:13
+   |
+51 |             ir_image: None,
+   |             ^^^^^^^^ `AppState` does not have this field
+   |
+   = note: all struct fields are already assigned
+
+error[E0560]: struct `AppState` has no field named `visible_image`
+  --> src\app.rs:52:13
+   |
+52 |             visible_image: None,
+   |             ^^^^^^^^^^^^^ `AppState` does not have this field
+   |
+   = note: all struct fields are already assigned
+
+error[E0277]: the trait bound `AppState: serde::Deserialize<'de>` is not satisfied
+    --> src\app.rs:70:57
+     |
+70   |             storage.get_string(eframe::APP_KEY).map(|s| serde_json::from_str(&s).unwrap_or_default()).unwrap_or_default()
+     |                                                         ^^^^^^^^^^^^^^^^^^^^^^^^ the trait `serde_core::de::Deserialize<'_>` is not implemented for `AppState`
+     |
+     = note: for local types consider adding `#[derive(serde::Deserialize)]` to your `AppState` type
+     = note: for types from other crates check whether the crate offers a `serde` feature flag
+     = help: the following other types implement trait `serde_core::de::Deserialize<'de>`:
+               &'a [u8]
+               &'a std::path::Path
+               &'a str
+               ()
+               (T,)
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+             and 309 others
+note: required by a bound in `serde_json::from_str`
+    --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde_json-1.0.145\src\de.rs:2699:8
+     |
+2697 | pub fn from_str<'a, T>(s: &'a str) -> Result<T>
+     |        -------- required by a bound in this function
+2698 | where
+2699 |     T: de::Deserialize<'a>,
+     |        ^^^^^^^^^^^^^^^^^^^ required by this bound in `from_str`
+
+error[E0308]: mismatched types
+   --> src\app.rs:107:81
+    |
+107 | ...   if let Ok(color_image) = convert_temperature_to_color_image(ir_data, &state.color_map, state.brightness, state.contrast) {
+    |                                ---------------------------------- ^^^^^^^ expected `&[f32]`, found `&CameraImage`
+    |                                |
+    |                                arguments to this function are incorrect
+    |
+    = note: expected reference `&[f32]`
+               found reference `&CameraImage`
+note: function defined here
+   --> src\app.rs:516:4
+    |
+516 | fn convert_temperature_to_color_image(
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+517 |     temp_data: &[f32],
+    |     -----------------
+
+error[E0308]: mismatched types
+   --> src\app.rs:113:72
+    |
+113 |                     if let Ok(color_image) = convert_u8_to_color_image(visible_data) {
+    |                                              ------------------------- ^^^^^^^^^^^^ expected `&[u8]`, found `&CameraImage`
+    |                                              |
+    |                                              arguments to this function are incorrect
+    |
+    = note: expected reference `&[u8]`
+               found reference `&CameraImage`
+note: function defined here
+   --> src\app.rs:583:4
+    |
+583 | fn convert_u8_to_color_image(data: &[u8]) -> Result<egui::ColorImage, String> {
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^ -----------
+
+error[E0277]: the trait bound `SizedTexture: From<TextureId>` is not satisfied
+    --> src\app.rs:396:30
+     |
+396  |                     ui.image(ir_image.texture_id(ui.ctx()), desired_size)
+     |                        ----- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `From<TextureId>` is not implemented for `SizedTexture`
+     |                        |
+     |                        required by a bound introduced by this call
+     |
+     = help: the following other types implement trait `From<T>`:
+               `SizedTexture` implements `From<&TextureHandle>`
+               `SizedTexture` implements `From<(TextureId, eframe::egui::Vec2)>`
+     = note: required for `TextureId` to implement `Into<SizedTexture>`
+     = note: required for `ImageSource<'_>` to implement `From<TextureId>`
+     = note: 1 redundant requirement hidden
+     = note: required for `TextureId` to implement `Into<ImageSource<'_>>`
+note: required by a bound in `Ui::image`
+    --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\egui-0.28.1\src\ui.rs:1833:46
+     |
+1833 |     pub fn image<'a>(&mut self, source: impl Into<ImageSource<'a>>) -> Response {
+     |                                              ^^^^^^^^^^^^^^^^^^^^^ required by this bound in `Ui::image`
+
+error[E0061]: this method takes 1 argument but 2 arguments were supplied
+    --> src\app.rs:396:24
+     |
+396  |                     ui.image(ir_image.texture_id(ui.ctx()), desired_size)
+     |                        ^^^^^                                ------------ unexpected argument #2 of type `eframe::egui::Vec2`
+     |
+note: method defined here
+    --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\egui-0.28.1\src\ui.rs:1833:12
+     |
+1833 |     pub fn image<'a>(&mut self, source: impl Into<ImageSource<'a>>) -> Response {
+     |            ^^^^^
+help: remove the extra argument
+     |
+396  -                     ui.image(ir_image.texture_id(ui.ctx()), desired_size)
+396  +                     ui.image(ir_image.texture_id(ui.ctx()))
+     |
+
+error[E0277]: the trait bound `SizedTexture: From<TextureId>` is not satisfied
+    --> src\app.rs:410:30
+     |
+410  |                     ui.image(visible_image.texture_id(ui.ctx()), desired_size)
+     |                        ----- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `From<TextureId>` is not implemented for `SizedTexture`
+     |                        |
+     |                        required by a bound introduced by this call
+     |
+     = help: the following other types implement trait `From<T>`:
+               `SizedTexture` implements `From<&TextureHandle>`
+               `SizedTexture` implements `From<(TextureId, eframe::egui::Vec2)>`
+     = note: required for `TextureId` to implement `Into<SizedTexture>`
+     = note: required for `ImageSource<'_>` to implement `From<TextureId>`
+     = note: 1 redundant requirement hidden
+     = note: required for `TextureId` to implement `Into<ImageSource<'_>>`
+note: required by a bound in `Ui::image`
+    --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\egui-0.28.1\src\ui.rs:1833:46
+     |
+1833 |     pub fn image<'a>(&mut self, source: impl Into<ImageSource<'a>>) -> Response {
+     |                                              ^^^^^^^^^^^^^^^^^^^^^ required by this bound in `Ui::image`
+
+error[E0061]: this method takes 1 argument but 2 arguments were supplied
+    --> src\app.rs:410:24
+     |
+410  |                     ui.image(visible_image.texture_id(ui.ctx()), desired_size)
+     |                        ^^^^^                                     ------------ unexpected argument #2 of type `eframe::egui::Vec2`
+     |
+note: method defined here
+    --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\egui-0.28.1\src\ui.rs:1833:12
+     |
+1833 |     pub fn image<'a>(&mut self, source: impl Into<ImageSource<'a>>) -> Response {
+     |            ^^^^^
+help: remove the extra argument
+     |
+410  -                     ui.image(visible_image.texture_id(ui.ctx()), desired_size)
+410  +                     ui.image(visible_image.texture_id(ui.ctx()))
+     |
+
+error[E0308]: mismatched types
+   --> src\app.rs:577:70
+    |
+577 |         Ok(egui::ColorImage::from_rgba_unmultiplied([width, height], &pixels))
+    |            ----------------------------------------                  ^^^^^^^ expected `&[u8]`, found `&Vec<Color32>`
+    |            |
+    |            arguments to this function are incorrect
+    |
+    = note: expected reference `&[u8]`
+               found reference `&std::vec::Vec<Color32>`
+note: associated function defined here
+   --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\epaint-0.28.1\src\image.rs:96:12
+    |
+96  |     pub fn from_rgba_unmultiplied(size: [usize; 2], rgba: &[u8]) -> Self {
+    |            ^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0308]: mismatched types
+   --> src\app.rs:579:67
+    |
+579 |         Ok(egui::ColorImage::from_rgba_unmultiplied([size, size], &pixels))
+    |            ----------------------------------------               ^^^^^^^ expected `&[u8]`, found `&Vec<Color32>`
+    |            |
+    |            arguments to this function are incorrect
+    |
+    = note: expected reference `&[u8]`
+               found reference `&std::vec::Vec<Color32>`
+note: associated function defined here
+   --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\epaint-0.28.1\src\image.rs:96:12
+    |
+96  |     pub fn from_rgba_unmultiplied(size: [usize; 2], rgba: &[u8]) -> Self {
+    |            ^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0599]: no method named `close` found for mutable reference `&mut eframe::Frame` in the current scope
+   --> src\app.rs:630:32
+    |
+630 |                         _frame.close();
+    |                                ^^^^^ method not found in `&mut eframe::Frame`
+
+error[E0277]: the trait bound `AppState: serde::Serialize` is not satisfied
+    --> src\app.rs:690:53
+     |
+690  |             if let Ok(json) = serde_json::to_string(&*state) {
+     |                               --------------------- ^^^^^^^ the trait `serde_core::ser::Serialize` is not implemented for `AppState`
+     |                               |
+     |                               required by a bound introduced by this call
+     |
+     = note: for local types consider adding `#[derive(serde::Serialize)]` to your `AppState` type
+     = note: for types from other crates check whether the crate offers a `serde` feature flag
+     = help: the following other types implement trait `serde_core::ser::Serialize`:
+               &'a T
+               &'a mut T
+               ()
+               (T,)
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 297 others
+note: required by a bound in `serde_json::to_string`
+    --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde_json-1.0.145\src\ser.rs:2247:17
+     |
+2245 | pub fn to_string<T>(value: &T) -> Result<String>
+     |        --------- required by a bound in this function
+2246 | where
+2247 |     T: ?Sized + Serialize,
+     |                 ^^^^^^^^^ required by this bound in `to_string`
+
+error[E0015]: cannot call non-const associated function `HashMap::<u16, Arc<std::sync::Mutex<CameraState>>>::new` in statics
+  --> src\camera.rs:10:86
+   |
+10 | static CAMERA_INSTANCES: RwLock<HashMap<u16, Arc<Mutex<CameraState>>>> = RwLock::new(HashMap::new());
+   |                                                                                      ^^^^^^^^^^^^^^
+   |
+   = note: calls in statics are limited to constant functions, tuple structs and tuple variants
+   = note: consider wrapping this expression in `std::sync::LazyLock::new(|| ...)`
+
+error[E0277]: the trait bound `FlagState: std::default::Default` is not satisfied
+   --> src\camera.rs:151:5
+    |
+148 | #[derive(Debug, Clone, Default)]
+    |                        ------- in this derive macro expansion
+...
+151 |     pub flag_state: FlagState,
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^ the trait `std::default::Default` is not implemented for `FlagState`
+
+error[E0063]: missing field `index` in initializer of `CameraState`
+   --> src\camera.rs:204:9
+    |
+204 |         Self {
+    |         ^^^^ missing `index`
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:305:23
+    |
+305 |             (self.ipc.library.bindings.get_visible_frame_config)(
+    |                       ^^^^^^^ private field
+
+error[E0624]: associated function `check_hresult` is private
+   --> src\camera.rs:312:33
+    |
+312 |         crate::ffi::ImagerIPC2::check_hresult(result)?;
+    |                                 ^^^^^^^^^^^^^ private associated function
+    |
+   ::: src\ffi.rs:751:5
+    |
+751 |     fn check_hresult(result: i32) -> Result<()> {
+    |     ------------------------------------------- private associated function defined here
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:365:23
+    |
+365 |             (self.ipc.library.bindings.get_visible_frame)(
+    |                       ^^^^^^^ private field
+
+error[E0624]: associated function `check_hresult` is private
+   --> src\camera.rs:373:33
+    |
+373 |         crate::ffi::ImagerIPC2::check_hresult(result)?;
+    |                                 ^^^^^^^^^^^^^ private associated function
+    |
+   ::: src\ffi.rs:751:5
+    |
+751 |     fn check_hresult(result: i32) -> Result<()> {
+    |     ------------------------------------------- private associated function defined here
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:499:40
+    |
+499 |         let queue = unsafe { (self.ipc.library.bindings.get_frame_queue)(self.index) };
+    |                                        ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:508:40
+    |
+508 |         let queue = unsafe { (self.ipc.library.bindings.get_visible_frame_queue)(self.index) };
+    |                                        ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:525:40
+    |
+525 |         let state = unsafe { (self.ipc.library.bindings.get_ipc_state)(self.index, reset) };
+    |                                        ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:534:41
+    |
+534 |         let result = unsafe { (self.ipc.library.bindings.set_ipc_mode)(self.index, mode as u16) };
+    |                                         ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:543:39
+    |
+543 |         let mode = unsafe { (self.ipc.library.bindings.get_ipc_mode)(self.index) } as u8;
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:557:41
+    |
+557 |         let result = unsafe { (self.ipc.library.bindings.set_flag)(self.index, value) };
+    |                                         ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:566:39
+    |
+566 |         let flag = unsafe { (self.ipc.library.bindings.get_flag)(self.index) };
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:575:28
+    |
+575 |         unsafe { (self.ipc.library.bindings.reset_flag)(self.index) };
+    |                            ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:584:41
+    |
+584 |         let result = unsafe { (self.ipc.library.bindings.renew_flag)(self.index) };
+    |                                         ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:617:39
+    |
+617 |         let temp = unsafe { (self.ipc.library.bindings.get_temp_proc)(self.index) };
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:626:39
+    |
+626 |         let temp = unsafe { (self.ipc.library.bindings.get_temp_housing)(self.index) };
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:635:39
+    |
+635 |         let temp = unsafe { (self.ipc.library.bindings.get_temp_target)(self.index) };
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:644:43
+    |
+644 |         let humidity = unsafe { (self.ipc.library.bindings.get_humidity)(self.index) };
+    |                                           ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:661:28
+    |
+661 |         unsafe { (self.ipc.library.bindings.file_screenshot)(self.index) };
+    |                            ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:670:28
+    |
+670 |         unsafe { (self.ipc.library.bindings.file_record)(self.index) };
+    |                            ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:679:28
+    |
+679 |         unsafe { (self.ipc.library.bindings.file_stop)(self.index) };
+    |                            ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:688:28
+    |
+688 |         unsafe { (self.ipc.library.bindings.file_play)(self.index) };
+    |                            ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:697:28
+    |
+697 |         unsafe { (self.ipc.library.bindings.file_pause)(self.index) };
+    |                            ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:714:43
+    |
+714 |         let avg_time = unsafe { (self.ipc.library.bindings.get_avg_time_per_frame)(self.index) };
+    |                                           ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:723:43
+    |
+723 |         let avg_time = unsafe { (self.ipc.library.bindings.get_visible_avg_time_per_frame)(self.index) };
+    |                                           ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:739:42
+    |
+739 |         let version = unsafe { (self.ipc.library.bindings.get_version_hid_dll)(self.index) };
+    |                                          ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:747:42
+    |
+747 |         let version = unsafe { (self.ipc.library.bindings.get_version_cd_dll)(self.index) };
+    |                                          ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:755:42
+    |
+755 |         let version = unsafe { (self.ipc.library.bindings.get_version_ipc_dll)(self.index) };
+    |                                          ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:764:40
+    |
+764 |         let count = unsafe { (self.ipc.library.bindings.get_temp_range_count)(self.index) };
+    |                                        ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:773:40
+    |
+773 |         let count = unsafe { (self.ipc.library.bindings.get_optics_count)(self.index) };
+    |                                        ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:782:40
+    |
+782 |         let count = unsafe { (self.ipc.library.bindings.get_measure_area_count)(self.index) };
+    |                                        ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:791:40
+    |
+791 |         let count = unsafe { (self.ipc.library.bindings.get_video_format_count)(self.index) };
+    |                                        ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:809:23
+    |
+809 |             (self.ipc.library.bindings.get_video_format)(self.index, index, &mut video_format)
+    |                       ^^^^^^^ private field
+
+error[E0624]: associated function `check_hresult` is private
+   --> src\camera.rs:811:33
+    |
+811 |         crate::ffi::ImagerIPC2::check_hresult(result)?;
+    |                                 ^^^^^^^^^^^^^ private associated function
+    |
+   ::: src\ffi.rs:751:5
+    |
+751 |     fn check_hresult(result: i32) -> Result<()> {
+    |     ------------------------------------------- private associated function defined here
+
+error[E0308]: mismatched types
+   --> src\camera.rs:823:19
+    |
+823 |             zoom: 0, // FALSE
+    |                   ^ expected `BOOL`, found integer
+    |
+help: try wrapping the expression in `windows::Win32::Foundation::BOOL`
+    |
+823 |             zoom: windows::Win32::Foundation::BOOL(0), // FALSE
+    |                   +++++++++++++++++++++++++++++++++ +
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:827:23
+    |
+827 |             (self.ipc.library.bindings.get_ir_arranging)(self.index, &mut ir_arranging)
+    |                       ^^^^^^^ private field
+
+error[E0624]: associated function `check_hresult` is private
+   --> src\camera.rs:829:33
+    |
+829 |         crate::ffi::ImagerIPC2::check_hresult(result)?;
+    |                                 ^^^^^^^^^^^^^ private associated function
+    |
+   ::: src\ffi.rs:751:5
+    |
+751 |     fn check_hresult(result: i32) -> Result<()> {
+    |     ------------------------------------------- private associated function defined here
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:839:23
+    |
+839 |             (self.ipc.library.bindings.set_ir_arranging)(self.index, ir_arranging as *const IRArranging as *mut IRArranging)
+    |                       ^^^^^^^ private field
+
+error[E0624]: associated function `check_hresult` is private
+   --> src\camera.rs:841:33
+    |
+841 |         crate::ffi::ImagerIPC2::check_hresult(result)?;
+    |                                 ^^^^^^^^^^^^^ private associated function
+    |
+   ::: src\ffi.rs:751:5
+    |
+751 |     fn check_hresult(result: i32) -> Result<()> {
+    |     ------------------------------------------- private associated function defined here
+
+error[E0308]: mismatched types
+   --> src\camera.rs:853:35
+    |
+853 |             bind_to_temp_profile: 0, // FALSE
+    |                                   ^ expected `BOOL`, found integer
+    |
+help: try wrapping the expression in `windows::Win32::Foundation::BOOL`
+    |
+853 |             bind_to_temp_profile: windows::Win32::Foundation::BOOL(0), // FALSE
+    |                                   +++++++++++++++++++++++++++++++++ +
+
+error[E0308]: mismatched types
+   --> src\camera.rs:854:29
+    |
+854 |             use_emissivity: 0, // FALSE
+    |                             ^ expected `BOOL`, found integer
+    |
+help: try wrapping the expression in `windows::Win32::Foundation::BOOL`
+    |
+854 |             use_emissivity: windows::Win32::Foundation::BOOL(0), // FALSE
+    |                             +++++++++++++++++++++++++++++++++ +
+
+error[E0308]: mismatched types
+   --> src\camera.rs:856:37
+    |
+856 |             show_in_dig_disp_group: 0, // FALSE
+    |                                     ^ expected `BOOL`, found integer
+    |
+help: try wrapping the expression in `windows::Win32::Foundation::BOOL`
+    |
+856 |             show_in_dig_disp_group: windows::Win32::Foundation::BOOL(0), // FALSE
+    |                                     +++++++++++++++++++++++++++++++++ +
+
+error[E0308]: mismatched types
+   --> src\camera.rs:861:26
+    |
+861 |             is_hot_spot: 0, // FALSE
+    |                          ^ expected `BOOL`, found integer
+    |
+help: try wrapping the expression in `windows::Win32::Foundation::BOOL`
+    |
+861 |             is_hot_spot: windows::Win32::Foundation::BOOL(0), // FALSE
+    |                          +++++++++++++++++++++++++++++++++ +
+
+error[E0308]: mismatched types
+   --> src\camera.rs:862:27
+    |
+862 |             is_cold_spot: 0, // FALSE
+    |                           ^ expected `BOOL`, found integer
+    |
+help: try wrapping the expression in `windows::Win32::Foundation::BOOL`
+    |
+862 |             is_cold_spot: windows::Win32::Foundation::BOOL(0), // FALSE
+    |                           +++++++++++++++++++++++++++++++++ +
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:865:23
+    |
+865 |             (self.ipc.library.bindings.get_measure_area)(self.index, index, &mut measure_area)
+    |                       ^^^^^^^ private field
+
+error[E0624]: associated function `check_hresult` is private
+   --> src\camera.rs:867:33
+    |
+867 |         crate::ffi::ImagerIPC2::check_hresult(result)?;
+    |                                 ^^^^^^^^^^^^^ private associated function
+    |
+   ::: src\ffi.rs:751:5
+    |
+751 |     fn check_hresult(result: i32) -> Result<()> {
+    |     ------------------------------------------- private associated function defined here
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:877:23
+    |
+877 |             (self.ipc.library.bindings.set_measure_area)(self.index, index, measure_area as *const MeasureArea as *mut MeasureArea, add_new)
+    |                       ^^^^^^^ private field
+
+error[E0624]: associated function `check_hresult` is private
+   --> src\camera.rs:879:33
+    |
+879 |         crate::ffi::ImagerIPC2::check_hresult(result)?;
+    |                                 ^^^^^^^^^^^^^ private associated function
+    |
+   ::: src\ffi.rs:751:5
+    |
+751 |     fn check_hresult(result: i32) -> Result<()> {
+    |     ------------------------------------------- private associated function defined here
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:888:40
+    |
+888 |         let index = unsafe { (self.ipc.library.bindings.get_temp_range_index)(self.index) };
+    |                                        ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:897:41
+    |
+897 |         let result = unsafe { (self.ipc.library.bindings.set_temp_range_index)(self.index, value) };
+    |                                         ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:906:42
+    |
+906 |         let decimal = unsafe { (self.ipc.library.bindings.get_temp_range_decimal)(self.index, effective) };
+    |                                          ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:915:39
+    |
+915 |         let temp = unsafe { (self.ipc.library.bindings.get_temp_min_range)(self.index, index) };
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:924:39
+    |
+924 |         let temp = unsafe { (self.ipc.library.bindings.get_temp_max_range)(self.index, index) };
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:933:39
+    |
+933 |         let temp = unsafe { (self.ipc.library.bindings.get_temp_measure_area)(self.index, index) };
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:942:45
+    |
+942 |         let emissivity = unsafe { (self.ipc.library.bindings.get_fixed_emissivity)(self.index) };
+    |                                             ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:951:41
+    |
+951 |         let result = unsafe { (self.ipc.library.bindings.set_fixed_emissivity)(self.index, value) };
+    |                                         ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:960:49
+    |
+960 |         let transmissivity = unsafe { (self.ipc.library.bindings.get_fixed_transmissivity)(self.index) };
+    |                                                 ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:969:41
+    |
+969 |         let result = unsafe { (self.ipc.library.bindings.set_fixed_transmissivity)(self.index, value) };
+    |                                         ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:978:39
+    |
+978 |         let temp = unsafe { (self.ipc.library.bindings.get_fixed_temp_ambient)(self.index) };
+    |                                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:987:41
+    |
+987 |         let result = unsafe { (self.ipc.library.bindings.set_fixed_temp_ambient)(self.index, value) };
+    |                                         ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+   --> src\camera.rs:996:38
+    |
+996 |         let rev = unsafe { (self.ipc.library.bindings.get_hardware_rev)(self.index) };
+    |                                      ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+    --> src\camera.rs:1005:38
+     |
+1005 |         let rev = unsafe { (self.ipc.library.bindings.get_firmware_rev)(self.index) };
+     |                                      ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+    --> src\camera.rs:1014:41
+     |
+1014 |         let serial = unsafe { (self.ipc.library.bindings.get_pif_serial_number)(self.index) };
+     |                                         ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+    --> src\camera.rs:1023:42
+     |
+1023 |         let version = unsafe { (self.ipc.library.bindings.get_pif_version)(self.index) };
+     |                                          ^^^^^^^ private field
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1037:24
+     |
+1037 |             if state & crate::ffi::IPC_EVENT_SERVER_STOPPED != 0 {
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1037:22
+     |
+1037 |             if state & crate::ffi::IPC_EVENT_SERVER_STOPPED != 0 {
+     |                      ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1043:66
+     |
+1043 |             if !self.state.lock().unwrap().connected && (state & crate::ffi::IPC_EVENT_INIT_COMPLETED != 0) {
+     |                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1043:64
+     |
+1043 |             if !self.state.lock().unwrap().connected && (state & crate::ffi::IPC_EVENT_INIT_COMPLETED != 0) {
+     |                                                                ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1048:25
+     |
+1048 |             if (state & crate::ffi::IPC_EVENT_FRAME_INIT != 0) && !self.frame_initialized {
+     |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1048:23
+     |
+1048 |             if (state & crate::ffi::IPC_EVENT_FRAME_INIT != 0) && !self.frame_initialized {
+     |                       ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1057:24
+     |
+1057 |             if state & crate::ffi::IPC_EVENT_VIS_FRAME_INIT != 0 {
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1057:22
+     |
+1057 |             if state & crate::ffi::IPC_EVENT_VIS_FRAME_INIT != 0 {
+     |                      ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1062:24
+     |
+1062 |             if state & crate::ffi::IPC_EVENT_CONFIG_CHANGED != 0 {
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1062:22
+     |
+1062 |             if state & crate::ffi::IPC_EVENT_CONFIG_CHANGED != 0 {
+     |                      ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1067:24
+     |
+1067 |             if state & crate::ffi::IPC_EVENT_FILE_CMD_READY != 0 {
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1067:22
+     |
+1067 |             if state & crate::ffi::IPC_EVENT_FILE_CMD_READY != 0 {
+     |                      ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1119:24
+     |
+1119 |             if state & crate::ffi::IPC_EVENT_SERVER_STOPPED != 0 {
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1119:22
+     |
+1119 |             if state & crate::ffi::IPC_EVENT_SERVER_STOPPED != 0 {
+     |                      ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1128:66
+     |
+1128 |             if !self.state.lock().unwrap().connected && (state & crate::ffi::IPC_EVENT_INIT_COMPLETED != 0) {
+     |                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1128:64
+     |
+1128 |             if !self.state.lock().unwrap().connected && (state & crate::ffi::IPC_EVENT_INIT_COMPLETED != 0) {
+     |                                                                ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1133:25
+     |
+1133 |             if (state & crate::ffi::IPC_EVENT_FRAME_INIT != 0) && !self.frame_initialized {
+     |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1133:23
+     |
+1133 |             if (state & crate::ffi::IPC_EVENT_FRAME_INIT != 0) && !self.frame_initialized {
+     |                       ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0057]: this function takes 2 arguments but 3 arguments were supplied
+    --> src\camera.rs:1141:21
+     |
+1141 |                     callback(width, height, depth);
+     |                     ^^^^^^^^                ----- unexpected argument #3 of type `i32`
+     |
+note: implementation defined here
+    --> /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2\library\alloc\src\boxed.rs:1978:1
+help: remove the extra argument
+     |
+1141 -                     callback(width, height, depth);
+1141 +                     callback(width, height);
+     |
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1146:24
+     |
+1146 |             if state & crate::ffi::IPC_EVENT_VIS_FRAME_INIT != 0 {
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1146:22
+     |
+1146 |             if state & crate::ffi::IPC_EVENT_VIS_FRAME_INIT != 0 {
+     |                      ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1151:24
+     |
+1151 |             if state & crate::ffi::IPC_EVENT_CONFIG_CHANGED != 0 {
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1151:22
+     |
+1151 |             if state & crate::ffi::IPC_EVENT_CONFIG_CHANGED != 0 {
+     |                      ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0308]: mismatched types
+    --> src\camera.rs:1158:24
+     |
+1158 |             if state & crate::ffi::IPC_EVENT_FILE_CMD_READY != 0 {
+     |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u16`, found `u32`
+
+error[E0277]: no implementation for `u16 & u32`
+    --> src\camera.rs:1158:22
+     |
+1158 |             if state & crate::ffi::IPC_EVENT_FILE_CMD_READY != 0 {
+     |                      ^ no implementation for `u16 & u32`
+     |
+     = help: the trait `BitAnd<u32>` is not implemented for `u16`
+     = help: the following other types implement trait `BitAnd<Rhs>`:
+               `&u16` implements `BitAnd<u16>`
+               `&u16` implements `BitAnd`
+               `u16` implements `BitAnd<&u16>`
+               `u16` implements `BitAnd<zerocopy::byteorder::U16<O>>`
+               `u16` implements `BitAnd`
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+    --> src\camera.rs:1204:23
+     |
+1204 |             (self.ipc.library.bindings.set_callback_on_server_stopped)(
+     |                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+    --> src\camera.rs:1210:23
+     |
+1210 |             (self.ipc.library.bindings.set_callback_on_frame_init)(
+     |                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+    --> src\camera.rs:1216:23
+     |
+1216 |             (self.ipc.library.bindings.set_callback_on_new_frame_ex)(
+     |                       ^^^^^^^ private field
+
+error[E0616]: field `library` of struct `ImagerIPC2` is private
+    --> src\camera.rs:1222:23
+     |
+1222 |             (self.ipc.library.bindings.set_callback_on_init_completed)(
+     |                       ^^^^^^^ private field
+
+error[E0599]: no method named `into_mutex` found for struct `CameraState` in the current scope
+    --> src\camera.rs:1264:63
+     |
+193  | struct CameraState {
+     | ------------------ method `into_mutex` not found for this struct
+...
+1264 |                     if let Ok(mut self_state) = state.clone().into_mutex().lock() {
+     |                                                               ^^^^^^^^^^ method not found in `CameraState`
+
+error[E0599]: no method named `is_invalid` found for enum `Result` in the current scope
+     --> src\ffi.rs:383:19
+      |
+383   |         if module.is_invalid() {
+      |                   ^^^^^^^^^^ method not found in `Result<HMODULE, windows_core::error::Error>`
+      |
+note: the method `is_invalid` exists on the type `HMODULE`
+     --> C:\Users\rgnn6\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.52.0\src\Windows\Win32\Foundation\mod.rs:10970:5
+      |
+10970 |     pub fn is_invalid(&self) -> bool {
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: use the `?` operator to extract the `HMODULE` value, propagating a `Result::Err` value to the caller
+      |
+383   |         if module?.is_invalid() {
+      |                  +
+
+error[E0308]: mismatched types
+   --> src\ffi.rs:389:12
+    |
+389 |         Ok(module)
+    |         -- ^^^^^^ expected `HINSTANCE`, found `Result<HMODULE, Error>`
+    |         |
+    |         arguments to this enum variant are incorrect
+    |
+    = note: expected struct `HINSTANCE`
+                 found enum `Result<HMODULE, windows_core::error::Error>`
+help: the type constructed contains `Result<HMODULE, windows_core::error::Error>` due to the type of the argument passed
+   --> src\ffi.rs:389:9
+    |
+389 |         Ok(module)
+    |         ^^^------^
+    |            |
+    |            this argument influences the type of `Ok`
+note: tuple variant defined here
+   --> /rustc/29483883eed69d5fb4db01964cdf2af4d86e9cb2\library\core\src\result.rs:552:5
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+407 |             set_imager_ipc_count: get_func!("SetImagerIPCCount", unsafe extern "system" fn(WORD) -> HRESULT),
+    |                                   -------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+408 |             init_imager_ipc: get_func!("InitImagerIPC", unsafe extern "system" fn(WORD) -> HRESULT),
+    |                              ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+409 |             init_named_imager_ipc: get_func!("InitNamedImagerIPC", unsafe extern "system" fn(WORD, *mut u16) -> HRESULT),
+    |                                    ------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+410 |             run_imager_ipc: get_func!("RunImagerIPC", unsafe extern "system" fn(WORD) -> HRESULT),
+    |                             --------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+411 |             start_imager_ipc: get_func!("StartImagerIPC", unsafe extern "system" fn(WORD) -> HRESULT),
+    |                               ----------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+412 |             release_imager_ipc: get_func!("ReleaseImagerIPC", unsafe extern "system" fn(WORD) -> HRESULT),
+    |                                 ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+413 |             imager_ipc_process_messages: get_func!("ImagerIPCProcessMessages", unsafe extern "system" fn(WORD) -> HRESULT),
+    |                                          --------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+414 |             acknowledge_frame: get_func!("AcknowledgeFrame", unsafe extern "system" fn(WORD) -> HRESULT),
+    |                                ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+417 |             get_frame_config: get_func!("GetFrameConfig", unsafe extern "system" fn(WORD, *mut i32, *mut i32, *mut i32) -> HRESULT),
+    |                               ----------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ...nc_ptr.is_null() {
+    |           ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+418 | ...le_frame_config: get_func!("GetVisibleFrameConfig", unsafe extern "system" fn(WORD, *mut i32, *mut i32, *mut i32) -> HRESULT),
+    |                     ------------------------------------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ... func_ptr.is_null() {
+    |              ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+419 | ...ame: get_func!("GetFrame", unsafe extern "system" fn(WORD, WORD, *mut std::ffi::c_void, u32, *mut FrameMetadata) -> HRESULT),
+    |         ----------------------------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ...tr.is_null() {
+    |       ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+420 | ...rame: get_func!("GetVisibleFrame", unsafe extern "system" fn(WORD, WORD, *mut std::ffi::c_void, u32, *mut FrameMetadata) -> HRESULT),
+    |          ------------------------------------------------------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+423 |             set_log_file: get_func!("SetLogFile", unsafe extern "system" fn(*mut u16, i32, bool) -> HRESULT),
+    |                           ---------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+424 |             set_logging: get_func!("SetLogging", unsafe extern "system" fn(i32) -> HRESULT),
+    |                          ------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+425 |             log: get_func!("Log", unsafe extern "system" fn(WORD, *mut i8, i32) -> HRESULT),
+    |                  -------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ..._ptr.is_null() {
+    |         ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+428 | ...k_on_server_stopped: get_func!("SetCallback_OnServerStopped", unsafe extern "system" fn(WORD, FpOnServerStopped) -> HRESULT),
+    |                         ------------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+429 |             set_callback_on_frame_init: get_func!("SetCallback_OnFrameInit", unsafe extern "system" fn(WORD, FpOnFrameInit) -> HRESULT),
+    |                                         ----------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+430 |             set_callback_on_new_frame: get_func!("SetCallback_OnNewFrame", unsafe extern "system" fn(WORD, FpOnNewFrame) -> HRESULT),
+    |                                        --------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+431 |             set_callback_on_new_frame_ex: get_func!("SetCallback_OnNewFrameEx", unsafe extern "system" fn(WORD, FpOnNewFrameEx) -> HRESULT),
+    |                                           ------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ..._ptr.is_null() {
+    |         ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+432 | ...k_on_visible_frame_init: get_func!("SetCallback_OnVisibleFrameInit", unsafe extern "system" fn(WORD, FpOnFrameInit) -> HRESULT),
+    |                             ------------------------------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ..._ptr.is_null() {
+    |         ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+433 | ...k_on_new_visible_frame: get_func!("SetCallback_OnNewVisibleFrame", unsafe extern "system" fn(WORD, FpOnNewFrame) -> HRESULT),
+    |                            ---------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ...tr.is_null() {
+    |       ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+434 | ...on_new_visible_frame_ex: get_func!("SetCallback_OnNewVisibleFrameEx", unsafe extern "system" fn(WORD, FpOnNewFrameEx) -> HRESULT),
+    |                             -------------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ..._ptr.is_null() {
+    |         ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+435 | ...k_on_init_completed: get_func!("SetCallback_OnInitCompleted", unsafe extern "system" fn(WORD, FpOnInitCompleted) -> HRESULT),
+    |                         ------------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ..._ptr.is_null() {
+    |         ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+436 | ...k_on_config_changed: get_func!("SetCallback_OnConfigChanged", unsafe extern "system" fn(WORD, FpOnConfigChanged) -> HRESULT),
+    |                         ------------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ..._ptr.is_null() {
+    |         ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+437 | ...k_on_file_command_ready: get_func!("SetCallback_OnFileCommandReady", unsafe extern "system" fn(WORD, FpOnStringSend) -> HRESULT),
+    |                             ------------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ...nc_ptr.is_null() {
+    |           ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+438 | ...ack_on_new_nmea_string: get_func!("SetCallback_OnNewNMEAString", unsafe extern "system" fn(WORD, FpOnStringSend) -> HRESULT),
+    |                            ---------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+441 |             get_version_application: get_func!("GetVersionApplication", unsafe extern "system" fn(WORD) -> i64),
+    |                                      -------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+442 |             get_version_hid_dll: get_func!("GetVersionHID_DLL", unsafe extern "system" fn(WORD) -> i64),
+    |                                  ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+443 |             get_version_cd_dll: get_func!("GetVersionCD_DLL", unsafe extern "system" fn(WORD) -> i64),
+    |                                 --------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+444 |             get_version_ipc_dll: get_func!("GetVersionIPC_DLL", unsafe extern "system" fn(WORD) -> i64),
+    |                                  ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+446 |             get_temp_chip: get_func!("GetTempChip", unsafe extern "system" fn(WORD) -> f32),
+    |                            ---------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+447 |             get_temp_flag: get_func!("GetTempFlag", unsafe extern "system" fn(WORD) -> f32),
+    |                            ---------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+448 |             get_temp_proc: get_func!("GetTempProc", unsafe extern "system" fn(WORD) -> f32),
+    |                            ---------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+449 |             get_temp_box: get_func!("GetTempBox", unsafe extern "system" fn(WORD) -> f32),
+    |                           --------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+450 |             get_temp_housing: get_func!("GetTempHousing", unsafe extern "system" fn(WORD) -> f32),
+    |                               ------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+451 |             get_temp_target: get_func!("GetTempTarget", unsafe extern "system" fn(WORD) -> f32),
+    |                              ------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+452 |             get_humidity: get_func!("GetHumidity", unsafe extern "system" fn(WORD) -> f32),
+    |                           ---------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+453 |             get_temp_range_count: get_func!("GetTempRangeCount", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                   ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+454 |             get_optics_count: get_func!("GetOpticsCount", unsafe extern "system" fn(WORD) -> USHORT),
+    |                               ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+455 |             get_measure_area_count: get_func!("GetMeasureAreaCount", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                     --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+456 |             get_video_format_count: get_func!("GetVideoFormatCount", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                     --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+457 |             get_clipped_format_max_pos: get_func!("GetClippedFormatMaxPos", unsafe extern "system" fn(WORD, *mut POINT) -> HRESULT),
+    |                                         ------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+458 |             get_temp_min_range: get_func!("GetTempMinRange", unsafe extern "system" fn(WORD, ULONG) -> f32),
+    |                                 --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+459 |             get_temp_max_range: get_func!("GetTempMaxRange", unsafe extern "system" fn(WORD, ULONG) -> f32),
+    |                                 --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+460 |             get_optics_fov: get_func!("GetOpticsFOV", unsafe extern "system" fn(WORD, ULONG) -> USHORT),
+    |                             --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+461 |             get_optics_serial_number: get_func!("GetOpticsSerialNumber", unsafe extern "system" fn(WORD, ULONG) -> ULONG),
+    |                                       ----------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+462 |             get_temp_measure_area: get_func!("GetTempMeasureArea", unsafe extern "system" fn(WORD, ULONG) -> f32),
+    |                                    ------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+463 |             get_loc_measure_area: get_func!("GetLocMeasureArea", unsafe extern "system" fn(WORD, ULONG, *mut POINT) -> HRESULT),
+    |                                   --------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+464 |             set_loc_measure_area: get_func!("SetLocMeasureArea", unsafe extern "system" fn(WORD, ULONG, POINT) -> HRESULT),
+    |                                   ---------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+465 |             get_init_counter: get_func!("GetInitCounter", unsafe extern "system" fn(WORD) -> USHORT),
+    |                               ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+466 |             get_ipc_state: get_func!("GetIPCState", unsafe extern "system" fn(WORD, bool) -> USHORT),
+    |                            ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+467 |             get_ipc_mode: get_func!("GetIPCMode", unsafe extern "system" fn(WORD) -> USHORT),
+    |                           ------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+468 |             set_ipc_mode: get_func!("SetIPCMode", unsafe extern "system" fn(WORD, USHORT) -> USHORT),
+    |                           -------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+469 |             get_frame_queue: get_func!("GetFrameQueue", unsafe extern "system" fn(WORD) -> USHORT),
+    |                              --------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+470 |             get_visible_frame_queue: get_func!("GetVisibleFrameQueue", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                      ---------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+471 |             get_video_format: get_func!("GetVideoFormat", unsafe extern "system" fn(WORD, ULONG, *mut VideoFormat) -> HRESULT),
+    |                               ------------------------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+472 |             get_ir_arranging: get_func!("GetIRArranging", unsafe extern "system" fn(WORD, *mut IRArranging) -> HRESULT),
+    |                               ----------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+473 |             set_ir_arranging: get_func!("SetIRArranging", unsafe extern "system" fn(WORD, *mut IRArranging) -> HRESULT),
+    |                               ----------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+474 |             get_path_of_stored_file: get_func!("GetPathOfStoredFile", unsafe extern "system" fn(WORD, *mut u16, i32) -> HRESULT),
+    |                                      ------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+475 |             get_new_nmea_string: get_func!("GetNewNMEAString", unsafe extern "system" fn(WORD, *mut u16, i32) -> HRESULT),
+    |                                  ---------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+476 |             get_measure_area: get_func!("GetMeasureArea", unsafe extern "system" fn(WORD, ULONG, *mut MeasureArea) -> HRESULT),
+    |                               ------------------------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+477 |             set_measure_area: get_func!("SetMeasureArea", unsafe extern "system" fn(WORD, ULONG, *mut MeasureArea, bool) -> HRESULT),
+    |                               ------------------------------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+478 |             remove_measure_area: get_func!("RemoveMeasureArea", unsafe extern "system" fn(WORD, ULONG) -> HRESULT),
+    |                                  --------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+479 |             add_measure_area_point: get_func!("AddMeasureAreaPoint", unsafe extern "system" fn(WORD, ULONG, POINT) -> HRESULT),
+    |                                     ------------------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+480 |             set_measure_area_name: get_func!("SetMeasureAreaName", unsafe extern "system" fn(WORD, ULONG, *mut u16) -> HRESULT),
+    |                                    -------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 | ...nc_ptr.is_null() {
+    |           ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+481 | ...re_area_name: get_func!("GetMeasureAreaName", unsafe extern "system" fn(WORD, ULONG, *mut u16, *mut i32, i32) -> HRESULT),
+    |                  ----------------------------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+484 |             get_flag: get_func!("GetFlag", unsafe extern "system" fn(WORD) -> bool),
+    |                       ------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+485 |             set_flag: get_func!("SetFlag", unsafe extern "system" fn(WORD, bool) -> bool),
+    |                       ------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+486 |             get_optics_index: get_func!("GetOpticsIndex", unsafe extern "system" fn(WORD) -> USHORT),
+    |                               ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+487 |             set_optics_index: get_func!("SetOpticsIndex", unsafe extern "system" fn(WORD, USHORT) -> USHORT),
+    |                               ------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+488 |             get_temp_range_index: get_func!("GetTempRangeIndex", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                   ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+489 |             set_temp_range_index: get_func!("SetTempRangeIndex", unsafe extern "system" fn(WORD, USHORT) -> USHORT),
+    |                                   --------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+490 |             get_video_format_index: get_func!("GetVideoFormatIndex", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                     --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+491 |             set_video_format_index: get_func!("SetVideoFormatIndex", unsafe extern "system" fn(WORD, USHORT) -> USHORT),
+    |                                     ----------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+492 |             get_clipped_format_pos: get_func!("GetClippedFormatPos", unsafe extern "system" fn(WORD, *mut POINT) -> HRESULT),
+    |                                     ---------------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+493 |             set_clipped_format_pos: get_func!("SetClippedFormatPos", unsafe extern "system" fn(WORD, POINT) -> HRESULT),
+    |                                     ----------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+494 |             get_temp_range_decimal: get_func!("GetTempRangeDecimal", unsafe extern "system" fn(WORD, bool) -> USHORT),
+    |                                     --------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+495 |             get_main_window_embedded: get_func!("GetMainWindowEmbedded", unsafe extern "system" fn(WORD) -> bool),
+    |                                       --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+496 |             set_main_window_embedded: get_func!("SetMainWindowEmbedded", unsafe extern "system" fn(WORD, bool) -> bool),
+    |                                       --------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+497 |             get_main_window_loc_x: get_func!("GetMainWindowLocX", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                    ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+498 |             set_main_window_loc_x: get_func!("SetMainWindowLocX", unsafe extern "system" fn(WORD, USHORT) -> USHORT),
+    |                                    --------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+499 |             get_main_window_loc_y: get_func!("GetMainWindowLocY", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                    ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+500 |             set_main_window_loc_y: get_func!("SetMainWindowLocY", unsafe extern "system" fn(WORD, USHORT) -> USHORT),
+    |                                    --------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+501 |             get_main_window_width: get_func!("GetMainWindowWidth", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                    -------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+502 |             set_main_window_width: get_func!("SetMainWindowWidth", unsafe extern "system" fn(WORD, USHORT) -> USHORT),
+    |                                    ---------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+503 |             get_main_window_height: get_func!("GetMainWindowHeight", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                     --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+504 |             set_main_window_height: get_func!("SetMainWindowHeight", unsafe extern "system" fn(WORD, USHORT) -> USHORT),
+    |                                     ----------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+505 |             get_fixed_emissivity: get_func!("GetFixedEmissivity", unsafe extern "system" fn(WORD) -> f32),
+    |                                   ----------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+506 |             set_fixed_emissivity: get_func!("SetFixedEmissivity", unsafe extern "system" fn(WORD, f32) -> f32),
+    |                                   ---------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+507 |             get_fixed_transmissivity: get_func!("GetFixedTransmissivity", unsafe extern "system" fn(WORD) -> f32),
+    |                                       --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+508 |             set_fixed_transmissivity: get_func!("SetFixedTransmissivity", unsafe extern "system" fn(WORD, f32) -> f32),
+    |                                       -------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+509 |             get_fixed_temp_ambient: get_func!("GetFixedTempAmbient", unsafe extern "system" fn(WORD) -> f32),
+    |                                     ------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+510 |             set_fixed_temp_ambient: get_func!("SetFixedTempAmbient", unsafe extern "system" fn(WORD, f32) -> f32),
+    |                                     ----------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+511 |             set_pif_out: get_func!("SetPifOut", unsafe extern "system" fn(WORD, WORD, f32) -> f32),
+    |                          ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+512 |             fail_safe: get_func!("FailSafe", unsafe extern "system" fn(WORD, bool) -> bool),
+    |                        -------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+515 |             get_hardware_model: get_func!("GetHardware_Model", unsafe extern "system" fn(WORD) -> UCHAR),
+    |                                 ------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+516 |             get_hardware_spec: get_func!("GetHardware_Spec", unsafe extern "system" fn(WORD) -> UCHAR),
+    |                                ----------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+517 |             get_serial_number: get_func!("GetSerialNumber", unsafe extern "system" fn(WORD) -> ULONG),
+    |                                ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+518 |             get_serial_number_ulis: get_func!("GetSerialNumberULIS", unsafe extern "system" fn(WORD) -> ULONG),
+    |                                     -------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+519 |             get_avg_time_per_frame: get_func!("GetAvgTimePerFrame", unsafe extern "system" fn(WORD) -> ULONG),
+    |                                     ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+520 |             get_visible_avg_time_per_frame: get_func!("GetVisibleAvgTimePerFrame", unsafe extern "system" fn(WORD) -> ULONG),
+    |                                             -------------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+521 |             get_firmware_msp: get_func!("GetFirmware_MSP", unsafe extern "system" fn(WORD) -> USHORT),
+    |                               ----------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+522 |             get_firmware_cypress: get_func!("GetFirmware_Cypress", unsafe extern "system" fn(WORD) -> USHORT),
+    |                                   --------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+523 |             get_hardware_rev: get_func!("GetHardwareRev", unsafe extern "system" fn(WORD) -> USHORT),
+    |                               ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+524 |             get_firmware_rev: get_func!("GetFirmwareRev", unsafe extern "system" fn(WORD) -> USHORT),
+    |                               ---------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+525 |             get_pid: get_func!("GetPID", unsafe extern "system" fn(WORD) -> USHORT),
+    |                      -------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+526 |             get_vid: get_func!("GetVID", unsafe extern "system" fn(WORD) -> USHORT),
+    |                      -------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+527 |             get_pif_serial_number: get_func!("GetPIFSerialNumber", unsafe extern "system" fn(WORD) -> ULONG),
+    |                                    ------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+528 |             get_pif_version: get_func!("GetPIFVersion", unsafe extern "system" fn(WORD) -> USHORT),
+    |                              --------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+531 |             reset_flag: get_func!("ResetFlag", unsafe extern "system" fn(WORD)),
+    |                         ------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+532 |             renew_flag: get_func!("RenewFlag", unsafe extern "system" fn(WORD) -> bool),
+    |                         --------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+533 |             close_application: get_func!("CloseApplication", unsafe extern "system" fn(WORD)),
+    |                                -------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+534 |             reinit_device: get_func!("ReinitDevice", unsafe extern "system" fn(WORD)),
+    |                            ---------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+535 |             file_snapshot: get_func!("FileSnapshot", unsafe extern "system" fn(WORD)),
+    |                            ---------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+536 |             file_screenshot: get_func!("FileScreenshot", unsafe extern "system" fn(WORD)),
+    |                              ------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+537 |             file_record: get_func!("FileRecord", unsafe extern "system" fn(WORD)),
+    |                          -------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+538 |             file_stop: get_func!("FileStop", unsafe extern "system" fn(WORD)),
+    |                        ------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+539 |             file_play: get_func!("FilePlay", unsafe extern "system" fn(WORD)),
+    |                        ------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+540 |             file_pause: get_func!("FilePause", unsafe extern "system" fn(WORD)),
+    |                         ------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+541 |             file_open: get_func!("FileOpen", unsafe extern "system" fn(WORD, *mut u16) -> USHORT),
+    |                        -------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+542 |             load_layout: get_func!("LoadLayout", unsafe extern "system" fn(WORD, *mut u16) -> USHORT),
+    |                          ---------------------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+543 |             load_current_layout: get_func!("LoadCurrentLayout", unsafe extern "system" fn(WORD)),
+    |                                  --------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+544 |             save_current_layout: get_func!("SaveCurrentLayout", unsafe extern "system" fn(WORD)),
+    |                                  --------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+545 |             set_standard_layout: get_func!("SetStandardLayout", unsafe extern "system" fn(WORD)),
+    |                                  --------------------------------------------------------------- in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0599]: no method named `is_null` found for enum `Option` in the current scope
+   --> src\ffi.rs:397:29
+    |
+397 |                 if func_ptr.is_null() {
+    |                             ^^^^^^^ method not found in `Option<unsafe extern "system" fn() -> isize>`
+...
+546 |             master_instance_name: get_func!("MasterInstanceName", unsafe extern "system" fn(WORD, *mut u16) -> USHORT),
+    |                                   ------------------------------------------------------------------------------------ in this macro invocation
+    |
+    = note: this error originates in the macro `get_func` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+warning: unused variable: `pixels`
+   --> src\app.rs:592:13
+    |
+592 |         let pixels: Vec<egui::Color32> = data.iter()
+    |             ^^^^^^ help: if this is intentional, prefix it with an underscore: `_pixels`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `library_version`
+  --> src\camera.rs:52:16
+   |
+52 |     pub fn new(library_version: String) -> Result<Self> {
+   |                ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_library_version`
+
+warning: variable does not need to be mutable
+  --> src\camera.rs:55:13
+   |
+55 |         let mut camera = Camera::new(0)?; // Use index 0 by default
+   |             ----^^^^^^
+   |             |
+   |             help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: unused variable: `reason`
+    --> src\camera.rs:1231:51
+     |
+1231 |     extern "system" fn on_server_stopped_callback(reason: i32) -> HRESULT {
+     |                                                   ^^^^^^ help: if this is intentional, prefix it with an underscore: `_reason`
+
+warning: unused variable: `width`
+    --> src\camera.rs:1244:47
+     |
+1244 |     extern "system" fn on_frame_init_callback(width: i32, height: i32, depth: i32) -> HRESULT {
+     |                                               ^^^^^ help: if this is intentional, prefix it with an underscore: `_width`
+
+warning: unused variable: `height`
+    --> src\camera.rs:1244:59
+     |
+1244 |     extern "system" fn on_frame_init_callback(width: i32, height: i32, depth: i32) -> HRESULT {
+     |                                                           ^^^^^^ help: if this is intentional, prefix it with an underscore: `_height`
+
+warning: unused variable: `depth`
+    --> src\camera.rs:1244:72
+     |
+1244 |     extern "system" fn on_frame_init_callback(width: i32, height: i32, depth: i32) -> HRESULT {
+     |                                                                        ^^^^^ help: if this is intentional, prefix it with an underscore: `_depth`
+
+Some errors have detailed explanations: E0015, E0057, E0061, E0063, E0277, E0308, E0560, E0599, E0616...
+For more information about an error, try `rustc --explain E0015`.
+warning: `camera_connect` (bin "camera_connect") generated 51 warnings
+error: could not compile `camera_connect` (bin "camera_connect") due to 236 previous errors; 51 warnings emitted
