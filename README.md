@@ -45,6 +45,10 @@ This project provides a Rust-based interface for the Optris Pi 640 thermal camer
 - `src/ffi.rs`: FFI bindings for ImagerIPC2 library
 - `src/utils.rs`: Utility functions for image processing
 
-## License
+##To launch .exe
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+- `place the .exe file next to all the files in the Lib folder`
+- `Next, make sure that all the files in the lib folder are correct`
+- `Also, put the Sample C++ folder nearby`
+- `Also, place the camera_connect.d and camera_connect.pdb files next to each other.`
+- `You can run the .exe file and check`
